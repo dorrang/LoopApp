@@ -58,18 +58,18 @@ export default function Drumset() {
           pad.audioObj.currentTime = remainingTime;
         }
         /////////////NEED TO ADD SUSPENSION OF 2 BARS (4SEC) - CURRENT AUDIO TIME
-        var sus = setTimeout(() => {
-          // pad.audioObj.loop = true;
-          console.log(pad.audioObj.currentTime, remainingTime);
-          pad.audioObj.play();
-        }, (4000 - remainingTime));
+        // var sus = setTimeout(() => {
+        // pad.audioObj.loop = true;
+        console.log(pad.audioObj.currentTime, remainingTime);
+        pad.audioObj.play();
+        // }, (4000 - remainingTime));
         pad.audioObj.addEventListener('ended', () => {
-          clearTimeout(sus);
+          // clearTimeout(sus);
           pad.audioObj.currentTime = 0;
           pad.audioObj.play();
         }, false);
       } else {
-        clearTimeout(sus);
+        // clearTimeout(sus);
         pad.audioObj.pause();
         pad.audioObj.currentTime = 0;
       }
