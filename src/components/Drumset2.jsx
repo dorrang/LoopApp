@@ -7,9 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Drumset() {
   const [pads, setPads] = useState(drumsetdata.map(d => { return { ...d, audioObj: new Audio(d.soundURL) } }));
   const [idToChange, setIdToChange] = useState('');
-  const [activePads, setActivePads] = useState([])
-  const [padsActive, setPadsActive] = useState(false)
-  // const [loops, setLoops] = useState(0)
+  const [activePads, setActivePads] = useState([]);
+  const [padsActive, setPadsActive] = useState(false);
 
 
   useEffect(() => {
@@ -24,40 +23,37 @@ export default function Drumset() {
 
 
   useEffect(() => {
-    pads.some(pad => pad.isActive) ? setPadsActive(true) : setPadsActive(false)
-    setActivePads(pads.filter(pad => pad.isActive && pad))
-  }, [pads])
+    pads.some(pad => pad.isActive) ? setPadsActive(true) : setPadsActive(false);
+    setActivePads(pads.filter(pad => pad.isActive && pad));
+  }, [pads]);
 
 
   useEffect(() => {
-    pads.forEach(pad => (!pad.isActive) && stopPad(pad.audioObj))
+    pads.forEach(pad => (!pad.isActive) && stopPad(pad.audioObj));
 
     if (padsActive) {
 
       playPad(activePads[0].audioObj)
       activePads[0].audioObj.addEventListener('ended', () => {
-        // setLoops(prevState => prevState.loops++)
         console.log("ended");
         pads.forEach(pad => {
           if (pad.isActive) {
-            playPad(pad.audioObj)
+            playPad(pad.audioObj);
           }
         })
-      }, false)
+      }, false);
 
     } else {
-      stopAll()
+      stopAll();
     }
 
   }, [activePads])
 
 
-
-
   const playActive = () => {
     activePads.forEach(pad => {
       if (pad.isActive) {
-        pad.audioObj.loop = true
+        pad.audioObj.loop = true;
         pad.audioObj.play();
       }
     })
