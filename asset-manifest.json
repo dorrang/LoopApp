@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/LoopApp/static/js/main.ee68e852.chunk.js",
+    "main.js.map": "/LoopApp/static/js/main.ee68e852.chunk.js.map",
+    "runtime-main.js": "/LoopApp/static/js/runtime-main.f4383301.js",
+    "runtime-main.js.map": "/LoopApp/static/js/runtime-main.f4383301.js.map",
+    "static/css/2.3ac2345a.chunk.css": "/LoopApp/static/css/2.3ac2345a.chunk.css",
+    "static/js/2.ee456a92.chunk.js": "/LoopApp/static/js/2.ee456a92.chunk.js",
+    "static/js/2.ee456a92.chunk.js.map": "/LoopApp/static/js/2.ee456a92.chunk.js.map",
+    "index.html": "/LoopApp/index.html",
+    "precache-manifest.4d33426d027b9e53057bf2d84d6e0242.js": "/LoopApp/precache-manifest.4d33426d027b9e53057bf2d84d6e0242.js",
+    "service-worker.js": "/LoopApp/service-worker.js",
+    "static/css/2.3ac2345a.chunk.css.map": "/LoopApp/static/css/2.3ac2345a.chunk.css.map",
+    "static/js/2.ee456a92.chunk.js.LICENSE.txt": "/LoopApp/static/js/2.ee456a92.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/LoopApp/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4383301.js",
+    "static/css/2.3ac2345a.chunk.css",
+    "static/js/2.ee456a92.chunk.js",
+    "static/js/main.ee68e852.chunk.js"
+  ]
+}
