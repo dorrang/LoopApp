@@ -53,7 +53,7 @@ const drumsetdata = [
     id: "clap",
     key: "clap",
 
-    imgURL: "images/011-drum-3.png",
+    imgURL: "images/clapping.png",
     alt: "clap-img",
     letter: "V",
     soundURL: "sounds/Clap.mp3",
